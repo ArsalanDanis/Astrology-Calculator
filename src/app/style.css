@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --unnamed-font-family-poppins: Poppins;
+  }
+  
+  
+  body {
+    display: flex;
+    justify-content: center;
+    background: transparent linear-gradient(90deg, #F4F8FF 0%, #e7a0b8 100%) 0% 0%
+  }
+  
+  .container {
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: rgb(232, 232, 232);
+  }
+  
+  .astrology_image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .astrology_image img{
+    height: 275px;
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  .dark-mode .container {
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    opacity: 1;
+  }
+  
+  form p {
+    position: relative;
+    bottom: 32px;
+  }
+  
+  .mode {
+    
+    display: flex;
+    justify-content: end;
+    margin: 6px 0;
+  }
+
+  .darkMode-images{
+    height: 25px;
+    width: 25px;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: black;
+    border-radius: 50%;
+   }
+
+  
+  .dark-mode .mode {
+    background-color: white;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  }
+  
+  .dark-mode .main h2 {
+    color: white
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+   
+  }
+  
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  button[type="submit"] {
+    background-color: #86db00;
+  
+  }
+  
+  button[type="reset"] {
+    background-color: #ff6347;
+    border-radius: 0px 15px 0px 15px;
+  }
+  
+  button[type="button"] {
+    background-color: #0e1d27;
+    border-radius: 50%;
+  }
+  
+  .userDetails {
+    margin: 35px 0 35px 0;
+  }
+  
+  .userDetails h1 {
+    margin: 10px 0;
+    font-family: var(--unnamed-font-family-poppins);
+    ;
+  }
+  
+  .userDetails h3 {
+    margin: 27px 0;
+    color: #31955d;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .userName {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    row-gap: 10px;
+  }
+  
+  .userName h4 {
+    font-size: 32px;
+    letter-spacing: 0.1em;
+    color: crimson;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .userName h5 {
+    font-size: 26px;
+    color: #3ad900;
+    font-weight: bolder
+  }
+  
+  .destiny {
+    margin-top: 30px;
+  }
+  
+  .destiny h4 {
+   
+    font-family: var(--unnamed-font-family-roboto);
+    letter-spacing: 0px;
+    opacity: 1;
+    font-style: italic;
+    margin-top: 25px;
+  }
+  
+  .buttons-block {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .destiny p {
+    text-align: center;
+    font-size: larger;
+    color: #9b00a8;
+    margin-bottom: 12px;
+    background: #dfdfd1;
+    padding: 6px 0;
+    border-radius: 15px;
+  
+  }
+  
+  .totalSum {
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    padding: 8px 13px;
+    outline: 3px dotted black;
+    margin: 2px;
+    position: relative;
+    top: 8px;
+  
+  }
+  
+  .resultSum {
+    background: red;
+    border-radius: 50%;
+    padding: 4px 12px;
+    color: white;
+    font-weight: bolder;
+    outline: 3px dotted black;
+  }
+  
+  
+  .dark-mode button {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .dark-mode button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark-mode button[type="reset"] {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark-mode button[type="button"] {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  
+  .dark-mode h2,
+  .dark-mode h3,
+  .dark-mode p,
+  .dark-mode b {
+    color: #fff;
+  }
+  
+  
+  
+  
+  
